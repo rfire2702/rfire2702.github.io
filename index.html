@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+  <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css"></style>
+</head>
+<body onload="initclock()">
+<header id="colorchange">
+	<h5><a href="#" onclick="ShowAndHide('home')">Siddhant Chandra Kulshrestha</a></h5>
+	<ul class="navbar">
+		<li class="header_active"><a href="#" onclick="ShowAndHide('home')">Home</a></li>
+		<li class="header"><a href="#" onclick="ShowAndHide('about')">About</a></li>
+		<li class="header"><a href="#" onclick="ShowAndHide('contact')">Contact</a></li>
+	</ul>
+  <div class="burger">
+    <div class="line1" onclick="move()"></div>
+		<div class="line2" onclick="move()"></div>
+		<div class="line3" onclick="move()"></div>
+  </div>
+</header>
+<section id ="home">
+	<img src="assests/Sid.png" alt="Error loading profile picture"></img>
+	<div class="name_container">
+	<p> Hello,</p>
+	<p> I'm Siddhant </p>
+	<p> M.Tech. Computer Science </p>
+	<button class="down_cv"><a href ="assests/Resume - Siddhant Chandra Kulshrestha.pdf" target="_blank"> Download CV </a></button>
+	</div>
+</section>
+
+<section id ="about">
+  <div class="title">
+	<h3>About Me</h3><br>
+		<p> Some things about me. </p>
+	</div>
+	<div class="about_content">
+	<div class="textbx">
+        <button type="button" class="collapsible" id="col1" data-button-icon = "+" onclick="collapsiblebar(id)">Education</button>
+        <div class="content_collapsebar" id="col1para">
+            <p>
+                <div class="edu_content">
+                    <div class="edu_image1"><a href="https://www.iiit.ac.in/" target="_blank"><img src="assests/iiit-new.png" class="image" alt="IIIT Profile Pic"></img></a></div>
+                    <div class="edu_content1">
+                    <h2 class="edu_title"> International Institute Of Information Technology, Hyderabad </h2>
+                    <p class="edu_paragraph">
+                        M.Tech., Computer Science Engineering<br>
+                        June, 2021 - April, 2023
+                    </p>
+                    </div>
+                </div>
+                <div class="edu_content">
+                    <div class="edu_image1"><a href="https://www.dituniversity.edu.in/" target="_blank"><img src="assests/DIT.jpg" class="image" alt="DIT Profile Pic"></img></a></div>
+                        <div class="edu_content1">
+                        <h2 class="edu_title"> DIT University, Dehradun </h2>
+                        <p class="edu_paragraph">
+                            B.Tech., Computer Science Engineering (specialization in Machine Learning)<br>
+                            August, 2017 – April, 2021<br>
+                            CGPA – 8.88
+                        </p>
+                    </div>
+                </div>
+                <div class="edu_content">
+                    <div class="edu_image1"><a href="https://dpsgrnoida.in/dpsgrnoida/default.asp" target="_blank"><img src="assests/dps.jpg" class="image" alt="DPS Profile Pic"></img></a></div>
+                        <div class="edu_content1">
+                        <h2 class="edu_title"> Delhi Public School, Greater Noida </h2>
+                        <p class="edu_paragraph">
+                            Class XII<br>
+                            May 2014 – March 2016<br>
+                            Percentage – 88%
+                        </p>
+                    </div>
+                </div>
+            </p>
+        </div>
+        <button type="button" class="collapsible" id="col2" data-button-icon = "+" onclick="collapsiblebar(id)">Experience</button>
+        <div class="content_collapsebar" id="col2para">
+            <p><ul>
+                <li class="heading">Worked in <a href="https://www.interrasystems.com/" target="_blank"> Interra Systems</a> as an Internship Trainee from June 2019 to August 2019.
+                <ul class="nested">
+                    <li>Worked in the AUTOMATION department of their product WINNOW (AI software for classifying audio-visual content
+                        into semantic concepts) and BATON (AI enabled automated QC platform that provides comprehensive quality and
+                        compliance checks for VOD content)</li>
+                    <li>Optimized an existing Python Script using Pandas, SQL and Ordered Dictionaries to generate and compare an
+                        automated Excel (XL) report faster with a manually generated XL report</li>
+                    <li> Converted their existing programs to be system independent</li>
+                </ul></li>
+            </ul>           
+            </p>
+        </div>
+        <button type="button" class="collapsible" id="col3" data-button-icon = "+" onclick="collapsiblebar(id)">Projects</button>
+        <div class="content_collapsebar" id="col3para">
+            <p><ul>
+                <li class="heading">Operating Systems Project | Python - October 2018
+                <ul class="nested">
+                    <li>A Python Program that calculates the Average Turn Around time and Average Waiting Time of a particular scheduling algorithm in our Operating System</li>
+                    <li>Visual display using the Gantt Chart for each Scheduling Algorithm on how the jobs will be processed by our operating systems</li>
+                    <li>Code supports 6 Scheduling Algorithms - First Come First Serve (FCFS), Shortest Job First (SJF), Shortest Job Remaining Time First (SJRTF), Priority Scheduling (Non - Preemptive), Priority Scheduling (Preemptive), Round Robin</li>
+                </ul></li>
+                <li class="heading">Noise Removal in Images | Python - August 2019
+                    <ul class="nested">
+                        <li>Objective of the project was to remove noises that are present in a digital image </li>
+                        <li>Model was based on Convolution Neural Network implemented using TensorFlow</li>
+                        <li>It also followed Feature Detection implemented using OpenCV2</li>
+                    </ul></li>
+            </ul></p>
+        </div>
+        <button type="button" class="collapsible" id="col4" data-button-icon = "+" onclick="collapsiblebar(id)">Certificates And Workshops</button>
+        <div class="content_collapsebar" id="col4para">
+            <p><ul>
+                <li>CodeChef Data Structures and Algorithms Program (Foundation Level) in 2019</li>
+                <li>IBM Certified course in “Python for Data Science” in 2019</li>
+                <li> Certification course in Python from “University Of Michigan” in 2019</li>
+                <li> Certification course in Git and GitHub from “Coding Blocks” in 2018</li>
+            </ul>
+            </p>
+        </div>
+        <button type="button" class="collapsible" id="col5" data-button-icon = "+" onclick="collapsiblebar(id)">ExtraCurricular</button>
+        <div class="content_collapsebar" id="col5para">
+            <p><ul>
+                <li> Graduation in Hindustani Classical (Vocal) from Prayag Sangeet Samiti, Allahabad</li>
+                <li> Former member of Koshish, an NPO for education of underprivileged children, at DIT University</li>
+                <li>  Secured 2nd position in IEEE Crack the Code in DIT University – 2018</li>
+                <li>  Awarded “Best Design” in Complexomania held by SAE India Chapter of DIT University – 2017</li>
+                <li> Secured 1st position in Inter DPS National level Hindustani Vocal Competition (Group) – 2015</li>
+            </ul></p>
+        </div>
+        <button type="button" class="collapsible" id="col6" data-button-icon = "+" onclick="collapsiblebar(id)">Hobbies</button>
+        <div class="content_collapsebar" id="col6para">
+            <p><ul>
+                <li> Singing</li>
+                <li> Playing different instruments</li>
+                <li> Solving Puzzles</li>
+                <li> Playing Video Games</li>
+            </ul></p>
+        </div>
+	</div>
+	<div class="imgbx">
+		<img src="assests/1.jpg" alt="Error displaying About Me photo">
+	</div>
+	</div>
+</section>
+
+<section id ="contact">
+  <div class="max-width">
+	  <h3 class="title2"> Contact Me </h3>
+  <div class="contact-content">
+    <div class="content left">
+      <div class="text"> Get in touch </div>
+      <div class="icons">
+        <div class="row">
+          <i class="fa fa-user"></i>
+          <div class="info">
+            <div class="head">Name</div>
+            <div class="sub-title">Siddhant Chandra Kulshrestha</div>
+          </div>
+        </div>
+		  <div class="row">
+			  <i class="fa fa-phone"></i>
+			  <div class="info"> 
+          <div class="head">Number</div>
+			    <div class="sub-title">+91-8383801574</div>
+		    </div>
+		  </div>
+	    <div class="row">
+		    <i class="fa fa-envelope"></i>
+		    <div class="info">
+			    <div class="head">Mail</div>
+		    	<div class="sub-title">work.siddhantkulshrestha27@gmail.com</div>
+	    	</div>
+    	</div>
+  </div>
+  </div>
+  <div class="contact1">
+    <div class="header_7">
+      <div class="text">Message Me</div>
+      </div>
+<table class="contacttable">
+	<tr>
+		<td>Name:</td>
+		<td colspan="2"><input placeholder="Name" type="text"></td>
+	</tr>
+	<tr>
+		<td>Email:</td>
+		<td colspan="2"><input placeholder="abc@xyz.com" type="email"> </td>
+	</tr>
+	<tr>
+		<td>Message:</td>
+		<td colspan="2"><textarea placeholder="Your Message"></textarea></td>
+	</tr>
+</table>
+<div>
+		<input class="SubmitButton" type="submit" value="Submit">
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<footer>
+	<div class="bottom_bar">
+	<a href="https://www.linkedin.com/in/siddhant-chandra-kulshrestha/" target="_blank" ><i class="fa fa-linkedin"></i></a>
+	<a href="https://github.com/rfire2702" target="_blank"><i class="fa fa-github"></i></a>
+	<a href="https://www.codechef.com/users/rfire2702" target="_blank"><i class="fa fa-code"></i></a>
+  <div class="datetime">
+    <div class="date">
+      <span id="day">Day</span>,
+	    <span id="month">Month</span>
+      <span id="daynum">00</span>,
+      <span id="year">Year</span>
+    </div>
+	<div class="time">
+		<span id="hour">00</span>:
+		<span id="minutes">00</span>:
+		<span id="seconds">00</span>
+		<span id="period">AM</span>
+	</div>
+</div>
+	</div>
+</footer>
+<script src="scripts/main.js"></script>
+</body>
+<html>
